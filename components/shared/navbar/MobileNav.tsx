@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button";
 import { sidebarLinks } from "@/constants";
 import { usePathname } from "next/navigation";
 
-const NavContent = () => {
+export const NavContent = () => {
   const pathname = usePathname();
 
   console.log("pathname", pathname);
