@@ -5,51 +5,51 @@ import RenderTag from "../RenderTag";
 
 const topQuestionsData = [
   {
-    _id: 1,
+    _id: "1",
     title:
       "Best practices for data fetching in a Next.js application with Server-Side-Rendering (SSR)?",
   },
   {
-    _id: 2,
+    _id: "2",
     title: "Is it only me or the font is bolder than necessary?",
   },
   {
-    _id: 3,
+    _id: "3",
     title: "Can I get the course for free?",
   },
   {
-    _id: 4,
+    _id: "4",
     title: "Redux Toolkit Not Updating State as Expected",
   },
   {
-    _id: 5,
+    _id: "5",
     title: "Async/Await Function Not Handling Errors Properly",
   },
 ];
 
 const popularTagsData = [
   {
-    _id: 1,
+    _id: "1",
     name: "nextjs",
     totalQuestions: 23,
   },
   {
-    _id: 2,
+    _id: "2",
     name: "test",
     totalQuestions: 18,
   },
   {
-    _id: 3,
+    _id: "3",
     name: "react",
     totalQuestions: 16,
   },
   {
-    _id: 4,
+    _id: "4",
     name: "css",
     totalQuestions: 12,
   },
   {
-    _id: 5,
+    _id: "5",
     name: "next js",
     totalQuestions: 9,
   },
