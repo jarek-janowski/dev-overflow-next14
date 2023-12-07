@@ -2,10 +2,10 @@
 
 import React, { createContext, useContext, useState, useEffect } from "react";
 
-interface ThemeContextType {
+type ThemeContextType = {
   mode: string;
   setMode: (mode: string) => void;
-}
+};
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 

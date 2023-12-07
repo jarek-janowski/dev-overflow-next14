@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Metric from "../Metric";
-import RenderTag from "../RenderTag";
+import Metric from "../shared/Metric";
+import RenderTag from "../shared/RenderTag";
 import { formatNumber, getTimestamp } from "@/lib/utils";
 
 type Props = {
