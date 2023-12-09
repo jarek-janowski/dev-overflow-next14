@@ -6,36 +6,13 @@ import LocalSearch from "@/components/shared/search/LocalSearch";
 import { Button } from "@/components/ui/button";
 import { HomePageFilters } from "@/constants/filters";
 import Link from "next/link";
+import { getQuestions } from "@/lib/actions/question.action";
 
-const questions = [
-  {
-    _id: "1",
-    title:
-      "Best practices for data fetching in a Next.js application with Server-Side Rendering (SSR)?",
-    tags: [{ _id: "1", name: "next.js" }],
-    author: { _id: "1", name: "John Conerry Testowy", avatar: "" },
-    createdAt: new Date("2022-09-01T12:00:00.000Z"),
-    upvotes: 64,
-    answers: [],
-    views: 3700000,
-  },
-  {
-    _id: "@",
-    title: "Is it only me or the font is bolder than necessary?",
-    tags: [
-      { _id: "2", name: "nextjs" },
-      { _id: "3", name: "test" },
-      { _id: "4", name: "react" },
-    ],
-    author: { _id: "2", name: "Zack | Typescript ninja", avatar: "" },
-    createdAt: new Date("2023-10-01T12:00:00.000Z"),
-    upvotes: 1,
-    answers: [],
-    views: 3200,
-  },
-];
+export default async function Home() {
+  const result = await getQuestions({});
 
-export default function Home() {
+  console.log("result", result.questions);
+
   return (
     <>
       <div className="flex flex-col-reverse justify-between gap-4 sm:flex-row sm:items-center">
@@ -67,8 +44,8 @@ export default function Home() {
       </div>
       <HomeFilters />
       <div className="mt-10 flex w-full flex-col gap-6">
-        {questions.length > 0 ? (
-          questions.map((question) => (
+        {result.questions.length > 0 ? (
+          result.questions.map((question) => (
             <QuestionCard
               key={question._id}
               _id={question._id}
