@@ -7,7 +7,7 @@ export type TUser = {
   email: string;
   password?: string;
   bio?: string;
-  avatar: string;
+  picture: string;
   location?: string;
   portfolioWebsite?: string;
   reputation?: number;
@@ -22,7 +22,7 @@ const UserSchema = new Schema({
   email: { type: String, required: true, unique: true },
   password: { type: String },
   bio: { type: String },
-  avatar: { type: String, required: true },
+  picture: { type: String, required: true },
   location: { type: String },
   portfolioWebsite: { type: String },
   reputation: { type: Number, default: 0 },

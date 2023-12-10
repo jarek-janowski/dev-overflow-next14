@@ -7,7 +7,7 @@ type Props = {
   _id: string;
   title: string;
   tags: { _id: string; name: string }[];
-  author: { _id: string; name: string; avatar: string };
+  author: { _id: string; name: string; picture: string };
   createdAt: Date;
   upvotes: number;
   answers: Array<object>;
