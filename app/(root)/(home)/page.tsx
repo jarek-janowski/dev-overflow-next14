@@ -11,8 +11,6 @@ import { getQuestions } from "@/lib/actions/question.action";
 export default async function Home() {
   const result = await getQuestions({});
 
-  console.log("result", result.questions);
-
   return (
     <>
       <div className="flex flex-col-reverse justify-between gap-4 sm:flex-row sm:items-center">

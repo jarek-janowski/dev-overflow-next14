@@ -23,7 +23,6 @@ const LeftSidebar = () => {
   const pathname = usePathname();
   const { signOut } = useClerk();
 
-  console.log("pathname", pathname);
   return (
     <section className="custom-scrollbar background-light900_dark200 light-border sticky left-0 top-0 flex h-screen w-fit flex-col justify-between  overflow-y-auto border-r px-6 pb-6 pt-36 shadow-light-300 dark:shadow-none max-sm:hidden lg:w-[266px]">
       <div className="flex flex-col gap-6">

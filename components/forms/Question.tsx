@@ -64,8 +64,6 @@ const Question = ({ mongoUserId }: Props) => {
     }
   }
 
-  console.log(form.watch());
-
   const handleInputKeyDown = (
     e: React.KeyboardEvent<HTMLInputElement>,
     field: any
